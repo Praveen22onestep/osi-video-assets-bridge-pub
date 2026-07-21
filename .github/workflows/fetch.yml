@@ -29,4 +29,5 @@ jobs:
           git config user.email bridge@local
           git add -A assets
           git commit -m "assets batch" || echo "nothing new"
+          git pull --rebase origin main || true
           git push
